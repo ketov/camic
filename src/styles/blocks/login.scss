@@ -1,3 +1,48 @@
 .login-popup{
+    background: #fff;
     display: none;
+    left: 50%;
+    margin: 0 0 0px -180px;
+    padding: 0 30px 33px;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    z-index: 11;
+    &__close{
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    h4{
+        font-size: 160%;
+        margin: 34px 0 16px 0;
+    }
+    input{
+        border: 1px solid #afafaf;
+        display: block;
+        outline: none;
+        margin: 15px 0 0 0;
+        padding: 8px 0 7px 9px;
+        width: 286px;
+    }
+    button{
+        background: none;
+        border: 1px solid #e41300;
+        color: #e41300;
+        cursor: pointer;
+        border-radius: 45px;
+        display: table;
+        font-size: 95%;
+        margin: 23px auto 0;
+        outline: none;
+        padding: 8px 28px 9px;
+        position: relative;
+        transition: .25s;
+        &:hover{
+            background: #e41300;
+            color: #fff;
+        }
+    }
 }
