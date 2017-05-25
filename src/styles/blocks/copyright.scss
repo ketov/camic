@@ -1,0 +1,16 @@
+.copyright{
+    background: #00408e;
+    color: rgba(255, 255, 255, 0.54);
+    font-size: 90%;
+    font-weight: 400;
+    padding: 23px 0 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media(max-width: 670px){
+    .copyright{
+        padding: 23px 5% 20px;
+        width: 90%;
+    }    
+}

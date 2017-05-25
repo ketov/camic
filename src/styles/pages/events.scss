@@ -1,0 +1,347 @@
+.p-events{
+    .container{
+        margin: 0 auto;
+        max-width: 1204px;
+    }
+    .index-news{
+        padding: 0;
+    }
+    .icons{
+        margin: 79px auto 73px;
+        width: 76%;
+        .icon-container{
+            cursor: pointer;
+            display: block;
+            float: left;
+            margin: 0 2.5%;
+            width: 14.5%;
+            .icon{
+                border: 2px solid #949494;
+                border-radius: 72px;
+                display: table;
+                height: 98px;
+                margin: 0 auto;
+                position: relative;
+                transition: 0.25s;
+                width: 98px;
+                img{
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    transition: 0.25s;
+                }
+                .normal{
+                    opacity: 1;
+                }
+                .active{
+                    opacity: 0;
+                }
+            }
+            .icon.active{
+                background: #007fff;
+                border: 2px solid #007fff;
+                .normal{
+                    opacity: 0;
+                }
+                .active{
+                    opacity: 1;
+                }
+            }
+            .icon.active~.text{
+                color: #007fff;
+            }
+            &:hover .icon{
+                background: #007fff;
+                border: 2px solid #007fff;
+            }
+            &:hover .normal{
+                opacity: 0;
+            }
+            &:hover .active{
+                opacity: 1;
+            }
+            &:hover .text{
+                color: #007fff;
+            }
+            .text{
+                color: #848283;
+                font-size: 125%;
+                line-height: 125%;
+                margin: 15px 0 0 0;
+                text-align: center;
+                transition: .25s;
+            }
+        }
+    }
+
+    .event{
+        color: #fff;
+        margin: 0 0 47px 0;
+        &:first-child{
+            border: 3px solid #007fff;
+            background: #007fff;
+        }
+        &:nth-child(3n+1){
+            background: #007fff !important;
+            border: 3px solid #007fff;
+        }
+        &:nth-child(3n+2){
+            background: #019247;
+            border: 3px solid #019247;
+        }
+        &:nth-child(3n){
+            background: #cf2b36;
+            border: 3px solid #cf2b36;
+        }
+        .bg{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: table;
+            float: left;
+            text-align: center;
+            width: 50%;
+            .date{
+                font-size: 315%;
+            }
+            .time{
+                font-size: 250%;
+            }
+        }
+        .info{
+            float: right;
+            width: 50%;
+            .container{
+                padding: 54px 10% 19px 10%;
+                h4{
+                    font-size: 165%;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                p{
+                    font-size: 140%;
+                    line-height: 120%;
+                    margin: 22px 0 0 0;
+                }
+                .contact{
+                    background: url(../img/map-white.png) no-repeat;
+                    color: #fff;
+                    display: block;
+                    font-size: 150%;
+                    margin: 51px 0 16px 0;
+                    padding: 0 0px 12px 50px;
+                    text-decoration: none;
+                    transition: 0.2s;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+                .phone{
+                    background: url(../img/phone-white.png) no-repeat 2px 0px;
+                    color: #fff;
+                    display: block;
+                    font-size: 150%;
+                    margin: 16px 0 16px 0;
+                    padding: 0 0 12px 50px;
+                    text-decoration: none;
+                }
+                .email{
+                    background: url(../img/email-white.png) no-repeat 0px 8px;
+                    color: #fff;
+                    display: block;
+                    font-size: 150%;
+                    margin: 16px 0 10px 0;
+                    padding: 0 0 12px 50px;
+                    text-decoration: none;
+                }
+                .site{
+                    background: url(../img/site-white.png) no-repeat 0 8px;
+                    color: #fff;
+                    display: block;
+                    font-size: 150%;
+                    margin: 10px 0 0;
+                    padding: 7px 0 12px 50px;
+                    text-decoration: none;
+                }
+                .plus-calendar{    
+                    margin: 45px 0 0 0;                        
+                    .plus{
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    button{
+        background: none;
+        border: 1px solid #e41300;
+        color: #e41300;
+        cursor: pointer;
+        border-radius: 45px;
+        display: table;
+        font-size: 125%;
+        margin: 87px auto 80px;
+        outline: none;
+        padding: 16px 50px 14px;
+        position: relative;
+        transition: 0.25s;
+        &:hover{
+            background: #e41300;
+            color: #fff;
+        }
+        &:active{
+            top: 2px;
+        }
+    }
+
+    button.calendarEvent{
+        border: none;
+        border-radius: 0 !important;
+        float: right;
+        margin: -4px 26px 0 0;
+        padding: 0;
+        &:hover{
+            background: none;
+            color: none;
+        }
+        &:active{
+            top: 0;
+        }
+    }
+}
+
+.slider--news{
+    padding-top: 167px;
+}
+
+
+@media(max-width: 1340px){
+    .p-events{
+        .icons{
+            width: 98%;
+        }
+    }
+}
+
+@media(max-width: 1250px){
+    .p-events{
+        .icons{
+            margin: 62px auto 14px;
+            .icon-container{
+                margin: 0 2.5% 4% 2.5%;
+                width: 27%;
+            }
+        }
+    }
+}
+
+@media(max-width: 980px){
+    .p-events{
+        .event{
+            .bg{
+                float: none;
+                height: 250px;
+                width: 100%;
+            }
+            .info{
+                float: right;
+                height: auto !important;
+                width: 100%;
+                .container{
+                    padding: 42px 8% 19px 4%;
+                }
+            }
+        } 
+    } 
+}
+
+@media(max-width: 670px){
+    .p-events{
+        .icons{
+            margin-bottom: 54px;
+            margin-top: 62px;
+            .icon-container{
+                float: none;
+                margin: 0 auto 40px;
+                max-width: 180px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media(max-width: 580px){
+    .p-events{
+        .event {
+            .bg {
+                .date{
+                    font-size: 250%;
+                }
+                .time{
+                    font-size: 195%;
+                }
+            }
+        }
+    } 
+}
+
+@media(max-width: 520px){
+    .p-events{       
+        .event{
+            .info{
+                .container{
+                    .contact{
+                        background: url(../img/map-white.png) no-repeat 0px 6px;
+                        font-size: 110%;
+                        padding: 0 0 12px 39px;
+                    }
+                    .phone{
+                        font-size: 110%;
+                        padding: 6px 0 24px 38px;
+                    }
+                    .email{
+                        font-size: 110%;
+                        padding: 6px 0 14px 42px;
+                    }
+                    .site{
+                        font-size: 110%;
+                        padding: 9px 0 16px 41px;
+                    }
+                }
+            }
+        }
+        button{
+            margin: 80px auto 80px;
+            padding: 16px 28px 14px;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 360px){
+    .p-events{       
+        .event{
+            .info{
+                .container{
+                    .contact{
+                        font-size: 90%;
+                        padding: 5px 0 12px 39px;
+                    }
+                    .phone{
+                        font-size: 90%;
+                        padding: 9px 0 24px 38px;
+                    }
+                    .email{
+                        font-size: 90%;
+                        padding: 9px 0 14px 42px;
+                    }
+                    .site{
+                        font-size: 90%;
+                        padding: 12px 0 16px 41px;
+                    }
+                }
+            }
+        }
+    }
+}

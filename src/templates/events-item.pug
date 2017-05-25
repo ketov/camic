@@ -1,0 +1,145 @@
+doctype html
+html
+    head
+        title CAMIC | Events-item
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet")
+    body
+        include includes/header-2
+        include includes/black-bg
+        include login-popup
+
+
+        div.menu.fixed    
+            div.wrapper 
+                div.black(id="hamburger")
+                    div.line.line--1
+                    div.line.line--2
+                    div.line.line--3
+
+                div.menu__logo
+                    a(href="index.html")
+                        img(src="assets/img/logo-transparent.png" alt="logo")
+                ul.menu__menu
+                    li.submenu-1
+                        a 
+                            span LA CAMERA
+                        ul.submenu-1-ul
+                            li
+                                a(href="company.html") 
+                                    span
+                                        nobr Chi siamo
+                            li.submenu-2
+                                a
+                                    span
+                                        nobr Organizzazione
+                                        div.menu-triangle
+                                            img.blue(src="assets/img/triangle-blue.png" alt="triangle")
+                                            img.gray(src="assets/img/triangle-gray.png" alt="triangle")
+                                ul.submenu-2-ul
+                                    li
+                                        a(href="auditors.html") 
+                                            span
+                                                nobr Consiglio Direttivo
+                                    li
+                                        a(href="auditors.html") 
+                                            span
+                                                nobr Collegio dei Revisori
+                                    li
+                                        a(href="auditors.html") 
+                                            span
+                                                nobr Collegio dei Probiri
+                                    li
+                                        a(href="auditors.html") 
+                                            span
+                                                nobr Staff
+                            li
+                                a(href="request.html") 
+                                    span
+                                        nobr Richiesta di Patrocinio
+                    li
+                        a(href="news.html") 
+                            span NEWS
+
+                    li
+                        a(href="events.html") 
+                            span EVENTI E ATTIVITÁ
+                    li.submenu-1
+                        a
+                            span SERVIZI
+                        ul.submenu-1-ul
+                            li
+                                a(href="services.html") 
+                                    span
+                                        nobr Attivitá di promozione
+                            li
+                                a(href="services-business.html")
+                                    span
+                                        nobr Servizi alle imprese
+                    li
+                        a(href="associate.html") 
+                            span SOCI
+                    li
+                        a(href="partners.html") 
+                            span PARTNER
+                    li
+                        a(href="projects.html") 
+                            span PROGETTI
+                    li
+                        a(href="gallery.html") 
+                            span GALLERY
+                    li.login
+                        a(href="#") LOGIN
+                    li.clear
+                div.clear
+
+
+
+
+
+
+        div.breadcrumbs-2
+            div.wrapper
+                img(src="assets/img/breadcrumbs-camic.png" alt="")
+                div.container
+                    a(href="events.html") torna indietro 
+        div.wrapper.events-item
+            div.container
+                h1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                div.date 13.12.2016
+
+                div.contacts
+                    div.header FALKENSTEINER HOTEL 
+                    div.comment Immobiliare e Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                    div.address Pařížská 68/9, Josefov, 110 00 Praha 1
+                    div.calendar 22/25/2010
+                    a.email(href="mailto:info@manghigroup.com") info@manghigroup.com
+                    a.site(href="http://www.manghigroup.com") www.manghigroup.com
+
+                h4 REM GROUP
+                p Oggetto della gara è la costruzione del tratto Úsilné – Hodějovice di 7,2 chilometri e del tratto Hodějovice – Třebonín di 12,5 chilometri. Nel primo tratto si prevede la costruzione una galleria di circa un chilometro e quindi ponti per un valore complessivo stimato di 3,2 miliardi di corone. Il secondo tratto dovrebbe costare 4,5 miliardi di corone. La costruzione dovrebbe cominciare nel 2017 e le opere dovrebbero
+
+                h4 IPSUM LOREM 
+                p L'autostrada D3 è un'infrastruttura chiave in quanto dovrebbe collegare Praga con il Sud Boemia e la città austriaca di Linz. Attualmente è in funzione solo un tratto di 42 chilometri sui 175 chilometri complessivi. La costruzione del tratto di autostrada in Boemia Centrale è stato fortemente ritardato dalla cancellazione del tracciato, a seguito di alcune sentenza emesse dai tribunali. La parte dell'autostrada in Sud Boemia dovrebbe essere completata nel 2022.
+              
+                img(src="assets/img/girl-black.jpg" alt="")
+
+                include includes/swiper-2
+
+                a.pdf-link-1(href="#") 
+                    div.text Scarica Allegati
+                    div.img-container
+                        img.normal(src="assets/img/pdf.png" alt="pdf")
+                        img.active(src="assets/img/pdf-2.png" alt="pdf")
+                    div.clear
+               
+        include includes/social-small
+        include includes/footer
+        include includes/copyright
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+        script(src="assets/js/app.min.js")

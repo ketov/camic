@@ -1,0 +1,65 @@
+
+// Bootstrap
+//@import "_bootstrap.scss";
+
+// Owl-carousel
+//@import "../../bower_components/owl.carousel/dist/assets/owl.carousel.css";
+
+@import '_variables.scss';
+
+@import '_main.scss';
+
+// Элементы(кнопки, формы и т. д.)
+//@import '_elements.scss';
+
+// Блоки
+@import 'blocks/black-bg.scss';
+@import 'blocks/blue-block.scss';
+@import 'blocks/breadcrumbs.scss';
+@import 'blocks/breadcrumbs-2.scss';
+@import 'blocks/calendar.scss';
+@import 'blocks/copyright.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/hamburger.scss';
+@import 'blocks/header.scss';
+@import 'blocks/header-2.scss';
+@import 'blocks/index-events.scss';
+@import 'blocks/index-factoids.scss';
+@import 'blocks/index-news.scss';
+@import 'blocks/index-slider.scss';
+@import 'blocks/index-text.scss';
+@import 'blocks/index-two-blocks.scss';
+@import 'blocks/login.scss';
+@import 'blocks/member-to-member-popup.scss';
+@import 'blocks/menu.scss';
+@import 'blocks/menu-2.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/social-small.scss'; 
+
+// Страницы
+@import 'pages/all-pages.scss';
+@import 'pages/auditors.scss';
+@import 'pages/associate.scss';
+@import 'pages/come-associarsi.scss';
+@import 'pages/company.scss';
+@import 'pages/events.scss';
+@import 'pages/events-item.scss'; 
+@import 'pages/faq.scss';
+@import 'pages/gallery.scss';
+@import 'pages/gallery-item.scss';
+@import 'pages/member-to-member.scss';
+@import 'pages/news.scss';
+@import 'pages/news-item.scss';
+@import 'pages/organization.scss';
+@import 'pages/partners.scss';
+@import 'pages/project.scss';
+@import 'pages/projects.scss';
+@import 'pages/request.scss';
+@import 'pages/services.scss';
+@import 'pages/services-business.scss';
+
+// Библиотеки
+@import 'libs/fullcalendar.min.scss';
+@import 'libs/fullcalendar.print.min.scss';
+@import 'libs/jquery.fancybox.scss';
+@import 'libs/swiper.min.scss';

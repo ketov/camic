@@ -1,0 +1,19 @@
+.all-pages{
+    padding: 25px 0 0 35px;
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        border-bottom: 1px solid rgba(0, 135, 255, 0.3);
+        color: rgb(0, 135, 255);
+        display: table;
+        font-size: 140%;
+        margin: 12px 0 0px 0;
+        text-decoration: none;
+        &:hover{
+            border-bottom: 1px solid rgba(255, 61, 0, 0.3);
+            color: rgba(255, 61, 0, 1);
+        }
+    }
+}

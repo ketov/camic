@@ -1,0 +1,73 @@
+.project{
+    .container{
+        margin: 0 auto;
+        max-width: 1134px;
+    }
+    h1{
+        color: #077600;
+        font-size: 235%;
+        font-weight: normal;
+        line-height: 120%;
+        margin: 20px 0 14px 0;
+    }
+    .date{
+        color: #515151;
+        font-size: 165%;
+        margin: 14px 0 19px 0;
+    }
+    p{
+        color: #515151;
+        font-size: 110%;
+        line-height: 130%;
+        margin: 19px 0 19px;
+    }
+    p ~ img{
+        margin-top: 40px;
+    }
+    img{
+        margin: 0 0 0 0;
+        max-width: 100%;
+    }
+    .after-slider{
+        color: #515151;
+        margin: 43px 0 0 0;
+        .header{
+            font-size: 115%;
+            font-weight: 600;
+        }
+        p{
+            margin: 6px 0 0 0;
+        }
+    }
+    .contact{
+        background-image: url(../img/project-contacts.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 61px 0 89px;
+        padding: 36px 0 48px 53px;
+        .text{
+            font-size: 140%;
+            line-height: 125%;
+        }
+        .email{
+            background: url(../img/email-black.png) no-repeat 1px 3px;
+            color: #070000;
+            display: table;
+            margin: 22px 0 0 0;
+            padding: 0 0 0 58px;
+            text-decoration: none;    
+        }
+    }
+}
+
+@media(max-width: 470px){
+    .project{
+        .contact{
+            padding: 23px 0 23px 20px;
+            .email{
+                padding: 0 0 0 41px;    
+            }
+        }
+    }
+}

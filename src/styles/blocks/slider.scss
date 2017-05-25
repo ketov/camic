@@ -1,0 +1,28 @@
+.slider{
+    background: #eceaea;
+    padding: 44px 0 53px;
+    text-align: center;
+    .header{
+        color: #0056c0;
+        font-size: 180%;
+    }
+    .decoration{
+        margin: 29px 0 47px 0;
+    }
+}
+
+.swiper-2{
+    height: auto !important;
+    img{
+        width: 100% !important;
+    }
+}
+
+@media(max-width: 1340px){
+    .slider{
+        padding: 0;
+        .header{
+            padding-top: 25px;
+        }
+    }
+}

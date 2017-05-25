@@ -1,0 +1,365 @@
+.partners{
+    .container{
+        margin: 0 auto;
+        max-width: 1204px;
+    }
+    .icons{
+        margin: 79px auto 58px;
+        width: 65%;
+        .icon-container{
+            cursor: pointer;
+            display: block;
+            float: left;
+            margin: 0 2.5%;
+            width: 27.5%;
+            .icon{
+                border: 2px solid #949494;
+                border-radius: 72px;
+                display: table;
+                height: 98px;
+                margin: 0 auto;
+                position: relative;
+                transition: 0.25s;
+                width: 98px;
+                img{
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    transition: 0.25s;
+                }
+                .normal{
+                    opacity: 1;
+                }
+                .active{
+                    opacity: 0;
+                }
+            }
+            
+            &:hover .icon{
+                background: #007fff;
+                border: 2px solid #007fff;
+            }
+            &:hover .normal{
+                opacity: 0;
+            }
+            &:hover .active{
+                opacity: 1;
+            }
+            &:hover .text{
+                color: #007fff;
+            }
+            .text{
+                color: #848283;
+                font-size: 125%;
+                line-height: 125%;
+                margin: 15px 0 0;
+                text-align: center;
+                transition: .25s;
+            }
+        }
+    }
+    .partner{
+        background: none;
+        border: 1px solid rgba(178, 216, 255, 0);
+        cursor: pointer;
+        display: table;
+        float: left;
+        margin: 0 2.5% 2.5% 0;
+        text-align: center;
+        transition: .25s;
+        width: 23%;
+        .table-cell{
+            position: relative;
+        }
+        img{
+            max-width: 100%;
+        }
+        &:nth-child(4n){
+            margin: 0 0 2.5% 0;
+        }
+        &:hover{
+            border: 1px solid rgba(178, 216, 255, 1);
+            .active{
+                opacity: 1;
+            }
+            .normal{
+                opacity: 0;
+            }
+        }
+    }
+    .active{
+        opacity: 0;
+        position: absolute;
+        transition: 0.25s;
+        width: 100%;
+    }
+    .normal{
+        opacity: 1;        
+        transition: 0.25s;
+    }
+    button{
+        background: none;
+        border: 1px solid #e41300;
+        color: #e41300;
+        cursor: pointer;
+        border-radius: 45px;
+        display: table;
+        font-size: 125%;
+        margin: 40px auto 78px;
+        outline: none;
+        padding: 16px 50px 14px;
+        position: relative;
+        transition: 0.25s;
+        &:hover{
+            background: #e41300;
+            color: #fff;
+        }
+        &:active{
+            top: 2px;
+        }
+    }
+}
+
+.partner-popup{
+    background: #fff;
+    display: none;
+    left: 50%;
+    margin: 0 0 0 -602px;
+    padding: 96px 66px 171px 72px;
+    position: absolute;
+    top: 109px;
+    width: 1064px;
+    z-index: 5;
+    .close{
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        right: 66px;
+        top: 50px;
+    }
+    .header{
+        font-size: 170%;
+        padding: 0 0 0 15px;
+    }
+    .params{
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+        margin: 8px 0 0;
+        padding: 0 0 0 15px;
+        .param{
+            font-size: 150%;
+            margin: 0 0 28px 0;
+            .span-2{
+                color: #737474;
+            }
+        }
+        .col-1{
+            float: left;
+            max-width: 500px;
+            padding: 27px 0 0 0;
+        }
+        .col-2{
+            float: right;
+            padding: 88px 0 0 0;
+            img{
+                display: block;
+            }
+        }
+    }
+    .contacts{
+        .col-1{
+            float: left;
+            max-width: 500px; 
+        }
+        .col-2{
+            float: right;
+            padding: 28px 17px 0 0;
+            .map{
+                background: #ce2b37;
+                border: none;
+                border-radius: 36px;
+                color: #fff;
+                cursor: pointer;
+                display: block;
+                font-size: 125%;
+                outline: none;
+                padding: 14px 46px 15px;
+                text-decoration: none;
+            }
+        }
+    }
+    .address{
+        background: url(../img/map.png) no-repeat 15px 0;
+        font-size: 150%;
+        margin: 25px 0 12px;
+        padding: 2px 0 14px 65px;
+    }
+    .phone{
+        background: url(../img/phone-black.png) no-repeat 16px 0px;
+        color: #000;
+        display: block;
+        font-size: 150%;
+        margin: 0 0 12px 0;
+        padding: 2px 0 14px 65px;
+        text-decoration: none;
+    }
+    .email{
+        background: url(../img/email-black.png) no-repeat 12px 8px;
+        color: #000;
+        display: block;
+        font-size: 150%;
+        margin: 0 0 12px 0;
+        padding: 2px 0 14px 65px;
+        text-decoration: none;
+    }
+    .site{
+        background: url(../img/site.png) no-repeat 12px 2px;
+        color: #000;
+        display: block;
+        font-size: 150%;
+        padding: 2px 0 14px 65px;
+        text-decoration: none;
+    }
+}
+
+.partners{
+    .icons{
+        .icon-container{
+            .icon.active{
+                background: #007fff;
+                border: 2px solid #007fff;
+                opacity: 1 !important;
+                .normal{
+                    opacity: 0;
+                }
+                .active{
+                    opacity: 1;
+                }
+            }
+            .icon.active~.text{
+                color: #007fff;
+            }
+        }
+    } 
+} 
+
+
+@media(max-width: 1340px){
+    .partners{
+        .partner{
+            margin: 0 2.5% 2.5% 0;
+            width: 31.2%;
+            &:nth-child(4n){
+                margin: 0 2.5% 2.5% 0;
+            }
+            &:nth-child(3n){
+                margin: 0 0 2.5% 0;
+            }
+        }
+    }
+
+    .partner-popup{
+        margin: 0 0 0 -47%;
+        padding: 96px 5% 171px 3%;
+        width: 86%;
+        .params{
+            .col-2{
+                text-align: right;
+                img{
+                    display: inline-block;
+                    max-width: 85%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px){
+    .partner-popup{
+        .params{
+            .col-1{
+                max-width: 100%;
+                width: 100%;
+            }
+            .col-2{
+                max-width: 100%;
+                padding: 0 0 26px 0;
+                text-align: left;
+                width: 100%;
+            }
+        }
+    }    
+}
+
+@media(max-width: 980px){
+    .partner-popup{
+        .contacts{
+            .col-1{
+                float: none;
+                max-width: 100%;
+                width: 100%;
+            }
+            .col-2{
+                float: none;
+                margin: 0 0 0 14px;
+            }
+        }
+    }
+    .partners{
+        .icons{
+            margin: 62px auto 54px;
+            width: 88%;
+        }
+    }
+}
+
+@media(max-width: 850px){
+    .partners{
+        .partner{
+            margin: 0 3% 3% 0;
+            width: 47.5%;
+            &:nth-child(4n){
+                margin: 0 3% 3% 0;
+            }
+            &:nth-child(3n){
+                margin: 0 3% 3% 0;
+            }
+            &:nth-child(2n){
+                margin: 0 0 3% 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 670px){
+    .partners{
+        .icons{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 580px){
+    .partners{
+        .icons{
+            .icon-container{
+                float: none;
+                margin: 0 auto 40px;
+                width: 105px;
+            }
+        }
+        .partner{
+            margin: 0 0 3% 0;
+            width: 100%;
+        }
+    }    
+
+    .partner-popup{
+        font-size: 70%;
+        padding-top: 30px;
+        .close{
+            right: 3px;
+            top: 14px;
+        }
+    }
+}

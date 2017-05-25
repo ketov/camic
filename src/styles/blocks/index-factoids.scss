@@ -1,0 +1,36 @@
+.index-factoids{
+    background: url(../img/index-factoids.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    color: #fff;
+    margin: 84px 0 0 0;
+    .container{
+        display: table;
+        height: 355px;
+        margin: 0 auto;
+        max-width: 1146px;
+        width: 100%;
+    }
+    .block{
+        float: left;
+        text-align: center;
+        width: 25%;
+    }
+    .factoid{
+        font-size: 245%;
+    }
+    .text{
+        font-size: 120%;
+    }
+}
+
+@media(max-width: 980px){
+    .index-factoids{
+        .block{
+            margin-top: 34px;
+            width: 100%;
+        }
+        .container{
+            padding: 18px 0px 50px;
+        }
+    }
+}

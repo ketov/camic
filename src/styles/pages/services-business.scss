@@ -1,0 +1,189 @@
+.services-business{
+    .tabs{
+        margin: 58px 0 32px;
+        text-align: center;        
+    }
+    .tab-container{
+        display: inline-table;
+        &:nth-child(2n){
+            margin: 0 13%;            
+        }
+    }
+    .tab{
+        background: #fff;
+        border: 2px solid #848283;
+        border-radius: 72px;
+        cursor: pointer;
+        display: inline-block;
+        height: 100px;
+        position: relative;
+        transition: 0.3s;
+        width: 100px;
+        &--chat{
+            .inactive{
+                background-image: url('../img/services-icon-chat.png');
+                opacity: 1;
+            }
+            .active{
+                background-image: url('../img/services-icon-chat-active.png');
+                opacity: 0;
+            }
+        }
+        &--reporting{
+            .inactive{
+                background-image: url('../img/services-icon-reporting.png');
+                opacity: 1;
+            }
+            .active{
+                background-image: url('../img/services-icon-reporting-active.png');
+                opacity: 0;
+            }
+        }
+        &--work{
+            .inactive{
+                background-image: url('../img/services-icon-work.png');
+                opacity: 1;
+            }
+            .active{
+                background-image: url('../img/services-icon-work-active.png');
+                opacity: 0;
+            }
+        }
+        &:hover{
+            background: #007fff;
+            border: 2px solid #007fff;
+            .active{
+                opacity: 1;
+            }
+            .inactive{
+                opacity: 0;
+            }
+        }
+    }
+    .tab.active{
+        background: #007fff;
+        border: 2px solid #007fff;
+        .normal{
+            opacity: 0;
+        }
+        .active{
+            opacity: 1;
+        }
+    }
+    .tab.active~.tab-text{
+        color: #007fff;
+    }
+    .tab-img{
+        height: 100px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: 0.3s;
+        width: 100px;
+    }
+    .tab-text{
+        font-size: 125%;
+        line-height: 120%;
+        margin: 10px 0 0 0;
+        max-width: 100px;
+        text-align: center;
+    }
+    .blocks{
+        margin: 66px 0 0 0;
+    }
+    .blue-block{
+        .contacts{
+            border-bottom: 1px solid #fff;
+            margin: 0 0 41px 0;
+            padding: 0 0 36px 0;
+            .c-header{
+                font-size: 220%;
+                margin: 0 0 43px 0;
+            }
+            .name{
+                font-size: 165%;
+                margin: 43px 0 0 0;
+            }
+            .post{
+                font-size: 170%;
+                font-weight: 100;
+            }
+            .phone{
+                background: url(../img/phone-white.png) no-repeat 5px 0px;
+                display: block;
+                color: #fff;
+                font-size: 165%;
+                font-weight: 100;
+                margin: 66px 0 0 0px;
+                padding: 4px 0 4px 76px;
+                text-decoration: none;
+            }
+            .email{
+                background: url(../img/email-white.png) no-repeat 1px 13px;
+                display: block;
+                color: #fff;
+                font-size: 165%;
+                font-weight: 100;
+                margin: 6px 0 0 0;
+                padding: 4px 0 4px 76px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 580px){
+    .services-business{
+        .tabs{
+            margin-top: 62px;
+        }
+        .tab-container{
+            display: block;
+        }
+        .tab-text{
+            margin: 10px auto 40px;
+        }
+    }
+}
+
+@media(max-width: 520px){
+    .services-business{
+        .blue-block{
+            .contacts{
+                .c-header{
+                    font-size: 150%;
+                }
+                .name{
+                    font-size: 125%;
+                }
+                .post{
+                    font-size: 130%;
+                }
+                .phone{
+                    font-size: 100%;
+                    padding: 10px 0 4px 46px;
+                }
+                .email{
+                    font-size: 100%;                
+                    padding: 13px 0 4px 46px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 520px){
+    .services-business{
+        .blue-block{
+            .contacts{
+                .phone{
+                    font-size: 90%;
+                    padding: 10px 0 18px 46px;
+                }
+                .email{
+                    font-size: 90%;          
+                }
+            }
+        }
+    }
+}

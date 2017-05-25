@@ -1,0 +1,44 @@
+.fc-button-group
+{
+    display: block !important;
+}
+
+.fc-prev-button, 
+.fc-next-button
+{
+    
+    border: 1px solid #fff !important;
+    border-radius: 19px !important;    
+    color: #fff !important;
+    display: inline-block !important;    
+    padding: 0 !important;
+    width: 35px;
+    &:hover{
+        background: #fff !important;
+        color: #000 !important;
+    }
+    &:active{
+        top: 0 !important;
+    }
+}
+
+.fc-prev-button{
+    margin-right: 10px !important;
+}
+
+#calendar{
+    color: #fff;
+    /*display: none;   */  
+    min-width: 900px;
+    opacity: 0;
+    overflow-x: auto;
+    position: absolute;
+    width: 1204px;
+    z-index: -3;
+}
+
+@media(max-width: 1250px){
+    #calendar{
+        width: 94%;
+    }    
+}

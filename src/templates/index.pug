@@ -1,0 +1,45 @@
+doctype html
+html
+    head
+        title CAMIC | Index
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet")
+    body
+        include includes/header
+        include includes/black-bg
+        include login-popup
+
+
+        div.main-img.main-img--index(style="background-image: url('assets/img/index-bg.jpg');" alt="index")
+            include includes/menu
+            div.search-email-white-container
+                div.wrapper
+                    include includes/search-email-white
+            div.table-cell 
+                | dal 2001 il punto di riferimento
+                br
+                | della comunità imprenditoriali italo-ceca
+        include includes/index-text
+        include includes/index-events
+        include includes/index-factoids
+        include includes/index-news        
+        div.slider
+            div.header Vetrina Soci
+            img.decoration(src="assets/img/header-decoration.png" alt="header decoration")
+            include includes/swiper
+        div.wrapper
+            div.container         
+        include includes/index-two-blocks
+        include includes/index-slider
+        include includes/footer
+        include includes/copyright
+
+
+        
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+        script(src="assets/js/app.min.js")

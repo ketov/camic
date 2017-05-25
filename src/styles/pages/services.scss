@@ -1,0 +1,102 @@
+.services{
+    .two-blocks{
+        color: #fff;
+        margin: 28px 0 0 0;
+        .block{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 0 75px;
+            padding: 66px 0 57px 5%;
+            width: 44%;
+            &:first-child{
+                background-image: url('../img/services-info.jpg');
+                float: left;
+            }
+            &:nth-child(2n){
+                background-image: url('../img/girl-services.jpg');
+                float: right;
+            }
+            .header{
+                font-size: 250%;
+            }
+            .name{
+                font-size: 190%;
+                margin: 8px 0 0 0;
+            }
+            .post{
+                font-size: 190%;
+                font-weight: 100;
+                line-height: 130%;
+                margin: 2px 0 0 0;
+            }
+            .phone{
+                background: url('../img/phone-white.png') no-repeat 9px 0;
+                color: #fff;
+                display: block;
+                font-size: 195%;
+                font-weight: 100;
+                margin: 33px 0 0;
+                padding: 0px 0 4px 79px;
+                text-decoration: none;
+            }
+            .email{
+                background: url('../img/email-white.png') no-repeat 5px 12px;
+                color: #fff;
+                display: block;
+                font-size: 195%;
+                font-weight: 100;
+                margin: 10px 0 0;
+                padding: 0 0 4px 79px;
+                text-decoration: none;
+            }
+        }
+    }
+    .blocks{
+        margin: 66px 0 0 0;
+    }
+}
+
+@media(max-width: 1150px){
+    .services{
+        .two-blocks{
+            .block{
+                margin: 0 0 32px;
+                width: 94%;
+                &:first-child{
+                    float: none;
+                }
+                &:nth-child(2n){
+                    float: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 580px){
+    .services{
+        .two-blocks{
+            .block{
+                font-size: 80%;
+                padding: 17px 0 18px 3%;
+                .phone, .email{
+                    padding: 5px 0 11px 47px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 470px){
+    .services{
+        .two-blocks{
+            .block{
+                font-size: 50%;
+                .phone, .email{
+                    padding: 12px 0 17px 45px;
+                }
+            }
+        }
+    }
+}

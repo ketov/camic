@@ -1,0 +1,124 @@
+.faq{
+    margin-bottom: 100px;
+    .container{
+        margin: 0 auto;
+        max-width: 1204px;
+    }
+    .blue-block{
+        .text{
+            h4{
+                font-size: 150%;
+                font-weight: normal;
+                margin: 13px 0 31px 0;
+            }
+            p{
+                font-weight: normal;
+                margin: 0 0 21px 0;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .icons{
+        margin: 88px auto 72px;
+        width: 66%;
+        .icon-container{
+            cursor: pointer;
+            display: block;
+            float: left;
+            margin: 0 2.5%;
+            width: 14.5%;
+            .icon{
+                border: 2px solid #949494;
+                border-radius: 72px;
+                display: table;
+                height: 98px;
+                margin: 0 auto;
+                position: relative;
+                transition: 0.25s;
+                width: 98px;
+                img{
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    transition: 0.25s;
+                }
+                .normal{
+                    opacity: 1;
+                }
+                .active{
+                    opacity: 0;
+                }
+            }
+            .icon.active{
+                background: #007fff;
+                border: 2px solid #007fff;
+                .normal{
+                    opacity: 0;
+                }
+                .active{
+                    opacity: 1;
+                }
+            }
+            .icon.active~.text{
+                color: #007fff;
+            }
+            &:hover .icon{
+                background: #007fff;
+                border: 2px solid #007fff;
+            }
+            &:hover .normal{
+                opacity: 0;
+            }
+            &:hover .active{
+                opacity: 1;
+            }
+            &:hover .text{
+                color: #007fff;
+            }
+            .text{
+                color: #848283;
+                font-size: 125%;
+                margin: 15px 0 0 0;
+                text-align: center;
+                transition: .25s;
+            }
+        }
+    }
+}
+
+@media(max-width: 1250px){
+    .faq{
+        .icons{
+            width: 98%;
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .faq{
+        .icons{
+            .icon-container{
+                margin: 0 2.5% 4% 2.5%;
+                width: 27%;
+            }
+        }
+    }
+}
+
+@media(max-width: 670px){
+    .faq{
+        .icons{
+            margin-bottom: 54px;
+            margin-top: 62px;
+            .icon-container{
+                float: none;
+                margin: 0 auto 40px;
+                max-width: 180px;
+                width: auto;
+            }
+        }
+    }
+}

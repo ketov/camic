@@ -1,0 +1,39 @@
+header{
+    .header{
+        color: #273379;
+        float: left;
+        font-size: 135%;
+        font-weight: 500;
+        padding: 38px 0 16px 0;
+    }
+    a{
+        display: block;
+        float: right;
+        margin: 43px 0 0 0;
+        img{
+            display: block;
+        }        
+    }
+    .cz{
+        margin: 43px 24px 0 0;
+    }
+}
+
+@media(max-width: 700px){
+    header{
+        text-align: center;
+        .header{
+            float: none;
+            padding: 15px 0 0px 0;
+            width: 100%;
+        }
+        a{
+            display: inline-block;
+            float: none;
+            margin: 9px 5px 10px 5px;
+        }
+        .cz{
+            margin: 9px 5px 10px 5px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.index-news{
+    padding: 77px 0 56px;
+    .container{
+        margin: 0 auto;
+        max-width: 1146px;
+    }
+    .header{
+        color: #515151;
+        font-size: 185%;
+        text-align: center;
+    }
+    .header-decoration{
+        display: block;
+        margin: 28px auto 0;
+    }
+    .news-block{
+        margin: 56px 0 52px;
+    }
+
+    .news{
+        color: #fff;
+        float: left;
+        margin: 0 2% 29px 0;
+        padding: 0 0 20px 0;
+        width: 32%;
+        &:first-child{
+            background: #007fff;
+        }
+        &:nth-child(3n+1){
+            background: #007fff !important;
+        }
+        &:nth-child(3n+2){
+            background: #019247;
+        }
+        &:nth-child(3n){
+            background: #cf2b36;
+            margin: 0 0 29px 0;
+        }
+    }
+
+    &--projects{
+        .news{
+            &:first-child{
+                background: #077600;
+            }
+            &:nth-child(3n+1){
+                background: #077600 !important;
+            }
+            &:nth-child(3n+2){
+                background: #077600;
+            }
+            &:nth-child(3n){
+                background: #077600;
+            }
+        }
+    }
+    .bg{
+        background-position: center;
+        background-size: cover;
+        height: 210px;
+        width: 100%;
+    }
+    .text{
+        font-size: 130%;
+        line-height: 125%;
+        padding: 29px 25px 28px 21px;
+    }
+    .date{
+        float: left;
+        font-size: 135%;
+        padding: 14px 0 0 21px;
+    }
+    .plus{
+        cursor: pointer;
+        float: right;
+        margin: 0 20px 0 0;
+    }
+    &__button{
+        background: rgba(228,19,0,0);
+        border: 1px solid #e41300;
+        border-radius: 34px;
+        color: #e41300;
+        cursor: pointer;
+        display: table;
+        font-size: 120%;
+        margin: 0 auto;
+        padding: 17px 43px 14px;
+        text-decoration: none;
+        transition: 0.25s;
+        &:hover{
+            background: #e41300;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 1250px){
+    .index-news .container {
+        margin: 27px auto 0;
+        width: 94%;
+    }
+}
+
+@media(max-width: 980px){
+    .index-news{
+        .news{
+            margin: 0 2.5% 2.5% 0;
+            width: 48.5%;
+            &:nth-child(2n){
+                margin: 0 0 2.5% 0 !important;
+            }
+            &:nth-child(3n){
+                margin: 0 2.5% 2.5% 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 670px){
+    .index-news{
+        .news{
+            margin: 0 0 3% 0;
+            width: 100%;
+            &:nth-child(3n){
+                margin: 0 0 3% 0;
+            }
+        }
+    }
+}
